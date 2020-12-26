@@ -789,7 +789,7 @@ $.setdata(ashxSignurl,'ashxsignurl' + $.idx);
 if(ashxSignheader)
 $.setdata(ashxSignheader,'ashxsignheader' + $.idx);
     
-    $.msg($.name + $.idx,"","[获取昵称数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取昵称数据]✅成功");}
 else  
 if ($request.url.indexOf("activity") > -1) {
     
@@ -804,7 +804,7 @@ if(initSignbd)
     $.setdata(initSignbd,'initsignbd' + $.idx);
 
     
-    $.msg($.name + $.idx,"","[获取签到数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取签到数据]✅成功");}
 
   else
 if ($request.body.indexOf("moreflag=0") > -1) {
@@ -815,14 +815,14 @@ if(addCoinSignbd)
     $.setdata(addCoinSignbd,'addCoinsignbd' + $.idx);
 
     
-    $.msg($.name + $.idx,"","[获取首页时段数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取首页时段数据]✅成功");}
 
   else
 if ($request.body.indexOf("moreflag=1") > -1) {
 const addCoin1Signbd = $request.body;
 if(addCoin1Signbd)
     $.setdata(addCoin1Signbd,'addCoin1signbd' + $.idx);
-    $.msg($.name + $.idx,"","[获取首页时段翻倍数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取首页时段翻倍数据]✅成功");}
 
 else
 if ($request.url.indexOf("cointowallet") > -1) {
@@ -839,7 +839,7 @@ if(cointowalletSignbd)
 $.setdata(cointowalletSignbd,'cointowalletsignbd' + $.idx);
 
     
-    $.msg($.name + $.idx,"","[获取提现数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取提现数据]✅成功");}
 
 else
 if ($request.url.indexOf("coin") > 0) {
@@ -857,7 +857,7 @@ if(coinSignbd)
     $.setdata(coinSignbd,'coinsignbd' + $.idx);
 
     
-    $.msg($.name + $.idx,"","[获取金币数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取金币数据]✅成功");}
 
 
   else
@@ -904,7 +904,7 @@ if ($request.url.indexOf("task") > 0) {
     const Coinbodyrw = $request.body;
 if(Coinbodyrw)
     $.setdata(Coinbodyrw,'coinbodyrw' + $.idx);
-    $.msg($.name + $.idx,"","[获取任务数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取任务数据]✅成功");}
 
   else
 if ($request.url.indexOf("reportAss") > 0) {
@@ -914,9 +914,11 @@ if(ReportAssheader)$.setdata(ReportAssheader,'reportAssheader' + $.idx);
 const ReportAssbody = $request.body;
 if(ReportAssbody)
     $.setdata(ReportAssbody,'reportAssbody' + $.idx);
-    $.msg($.name + $.idx,"","[获取助力数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取助力数据]✅成功");}
 
 }
+
+
 
 
 
