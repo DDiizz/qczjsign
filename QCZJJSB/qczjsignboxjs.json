@@ -1,0 +1,38 @@
+{
+"id": "",
+"name": "汽车之家极速版APP",
+"author": "",
+"icon": "",
+"repo": "https://github.com/DDiizz/task/tree",
+"apps": [{
+"id": "qczjappsign",
+"name": "汽车之家极速版APP",
+"keys": ["ashxsignurl", "ashxsignheader", "initsignheader", "initsignbd", "addCoinsignbd",  "addCoin1signbd",  "coinsignurl", "coinsignheader", "coinsignbd", "cointowalletsignurl", "cointowalletsignheader", "cointowalletsignbd", "coinbodyjx", "coinbodylqfl","coinbodyksp", "coinbodyzjb", "coinbodyflsp", "coinbodyrw", "reportAssbody", "reportAssheader",  "ashxsignurl2", "ashxsignheader2", "initsignheader2", "initsignbd2", "addCoinsignbd2",  "addCoin1signbd2",  "coinsignurl2", "coinsignheader2", "coinsignbd2", "cointowalletsignurl2", "cointowalletsignheader2", "cointowalletsignbd2", "coinbodyjx2", "coinbodylqfl2","coinbodyksp2", "coinbodyzjb2", "coinbodyflsp2", "coinbodyrw2", "reportAssbody2", "reportAssheader2",  "ashxsignurl3", "ashxsignheader3", "initsignheader3", "initsignbd3", "addCoinsignbd3",  "addCoin1signbd3",  "coinsignurl3", "coinsignheader3", "coinsignbd3", "cointowalletsignurl3", "cointowalletsignheader3", "cointowalletsignbd3", "coinbodyjx3", "coinbodylqfl3","coinbodyksp3", "coinbodyzjb3", "coinbodyflsp3", "coinbodyrw3", "reportAssbody3", "reportAssheader3",  ],
+"author": "",
+"settings": [{
+"id": "qczjSuffix",
+"name": "当前账号",
+"val": "1",
+"type": "number",
+"desc": "当前抓取ck记录的账号序号，例如：1、2、4、"
+},
+{
+"id": "qczjCount",
+"name": "账号个数",
+"val": "1",
+"type": "number",
+"desc": "指定任务最多跑几个账号，根据抓取的账号数据个数来设值"
+},
+{
+"id": "qczjBody",
+"name": "获取任务Body",
+"val": "0",
+"type": "number",
+"desc": "1,获取惊喜福利，2,领取福利188,3,分享视频赚金币,4,看视频领金币,5,观看福利视频"
+}
+],
+"repo": "https://github.com/DDiizz/task/blob/main/qczjappsign.js",
+"icons": "",
+"script": "https://raw.githubusercontent.com/DDiizz/task/main/qczjappsign.js"
+}]
+}
