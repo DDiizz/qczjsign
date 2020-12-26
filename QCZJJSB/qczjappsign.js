@@ -907,14 +907,24 @@ if(Coinbodyrw)
     $.msg($.name + $.idx,"","[获取任务数据]✅成功");}
 
   else
+if ($request.url.indexOf("task") > 0) {
+    const Coinbodyrw = $request.body;
+if(Coinbodyrw)
+    $.setdata(Coinbodyrw,'coinbodyrw' + $.idx);
+    $.msg($.name + $.idx,"","[获取任务数据]✅成功");}
+
+  else
 if ($request.url.indexOf("reportAss") > 0) {
     const ReportAssheader = JSON.stringify($request.headers);
 if(ReportAssheader)$.setdata(ReportAssheader,'reportAssheader' + $.idx);
+$.log(`[${$.name + $.idx}] [获取助力数据]✅成功,ReportAssheader: ${ReportAssheader}`);
 
 const ReportAssbody = $request.body;
 if(ReportAssbody)
     $.setdata(ReportAssbody,'reportAssbody' + $.idx);
+    $.log(`[${$.name + $.idx}] [获取助力数据]✅成功,ReportAssbody: ${ReportAssbody}`);
     $.msg($.name + $.idx,"","[获取助力数据]✅成功");}
+
 
 }
 
