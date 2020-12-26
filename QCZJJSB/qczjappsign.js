@@ -705,7 +705,7 @@ function reportAss(timeout=2000) {
       let Url = {
         url : "https://openapi.autohome.com.cn/autohome/uc-news-quickappservice/msapi/dealers/reportAss",
         headers : JSON.parse(reportAssheader),
-        body: reportAssbody.replace(/userAssistanceId=[0-9]{0,10}/, `userAssistanceId=${(Math.floor(Math.random() * 444444444) + 111111111)}`),
+        body: reportAssbody.replace(/userAssistanceId=[0-9]/, `userAssistanceId=${(Math.floor(Math.random() * 444444444) + 111111111)}`),
      
       }
       $.post(Url, async (err, resp, data) => {
