@@ -1,14 +1,14 @@
 {
-"id": "",
+"id": "DDiizz.app.sub",
 "name": "汽车之家极速版APP",
-"author": "",
+"author": "@DDiizz",
 "icon": "",
-"repo": "https://github.com/DDiizz/task/tree",
+"repo": "https://github.com/DDiizz/task",
 "apps": [{
 "id": "qczjappsign",
 "name": "汽车之家极速版APP",
-"keys": ["ashxsignurl", "ashxsignheader", "initsignheader", "initsignbd", "addCoinsignbd",  "addCoin1signbd",  "coinsignurl", "coinsignheader", "coinsignbd", "cointowalletsignurl", "cointowalletsignheader", "cointowalletsignbd", "coinbodyjx", "coinbodylqfl","coinbodyksp", "coinbodyzjb", "coinbodyflsp", "coinbodyrw", "reportAssbody", "reportAssheader",  "ashxsignurl2", "ashxsignheader2", "initsignheader2", "initsignbd2", "addCoinsignbd2",  "addCoin1signbd2",  "coinsignurl2", "coinsignheader2", "coinsignbd2", "cointowalletsignurl2", "cointowalletsignheader2", "cointowalletsignbd2", "coinbodyjx2", "coinbodylqfl2","coinbodyksp2", "coinbodyzjb2", "coinbodyflsp2", "coinbodyrw2", "reportAssbody2", "reportAssheader2",  "ashxsignurl3", "ashxsignheader3", "initsignheader3", "initsignbd3", "addCoinsignbd3",  "addCoin1signbd3",  "coinsignurl3", "coinsignheader3", "coinsignbd3", "cointowalletsignurl3", "cointowalletsignheader3", "cointowalletsignbd3", "coinbodyjx3", "coinbodylqfl3","coinbodyksp3", "coinbodyzjb3", "coinbodyflsp3", "coinbodyrw3", "reportAssbody3", "reportAssheader3",  ],
-"author": "",
+"keys": ["ashxsignurl", "ashxsignheader", "initsignheader", "initsignbd", "addCoinsignbd",  "addCoin1signbd",  "coinsignurl", "coinsignheader", "coinsignbd", "cointowalletsignurl", "cointowalletsignheader", "cointowalletsignbd", "coinbodyjx", "coinbodylqfl","coinbodyksp", "coinbodyzjb", "coinbodyflsp", "coinbodyrw", "reportAssbody", "reportAssheader",  "ashxsignurl2", "ashxsignheader2", "initsignheader2", "initsignbd2", "addCoinsignbd2",  "addCoin1signbd2",  "coinsignurl2", "coinsignheader2", "coinsignbd2", "cointowalletsignurl2", "cointowalletsignheader2", "cointowalletsignbd2", "coinbodyjx2", "coinbodylqfl2","coinbodyksp2", "coinbodyzjb2", "coinbodyflsp2", "coinbodyrw2", "reportAssbody2", "reportAssheader2",  "ashxsignurl3", "ashxsignheader3", "initsignheader3", "initsignbd3", "addCoinsignbd3",  "addCoin1signbd3",  "coinsignurl3", "coinsignheader3", "coinsignbd3", "cointowalletsignurl3", "cointowalletsignheader3", "cointowalletsignbd3", "coinbodyjx3", "coinbodylqfl3","coinbodyksp3", "coinbodyzjb3", "coinbodyflsp3", "coinbodyrw3", "reportAssbody3", "reportAssheader3",],
+"author": "@ddiizz",
 "settings": [{
 "id": "qczjSuffix",
 "name": "当前账号",
@@ -31,8 +31,8 @@
 "desc": "1,获取惊喜福利，2,领取福利188,3,分享视频赚金币,4,看视频领金币,5,观看福利视频"
 }
 ],
-"repo": "https://github.com/DDiizz/task/blob/main/qczjappsign.js",
-"icons": "",
-"script": "https://raw.githubusercontent.com/DDiizz/task/main/qczjappsign.js"
+"repo": "https://github.com/DDiizz/task/blob/main/qczjsign/qczjappsign.js",
+"icons": ["https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/qczjspeed.jpg", "https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/qczjspeed.jpg"],
+"script": "https://raw.githubusercontent.com/DDiizz/task/main/qczjsign/qczjappsign.js"
 }]
 }
