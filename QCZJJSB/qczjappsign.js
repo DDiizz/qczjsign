@@ -217,36 +217,36 @@ reportAssheaderArr.push($.getdata('reportAssheader'));
  // boxjs中设置多账号数
   let qczjCount = ($.getval('qczjCount') || '1') - 0;
   for (let i = 2; i <= qczjCount; i++) {
-    if ($.getdata('ashxsignurl${i}')) {	
-  ashxsignurlArr.push($.getdata('ashxsignurl${i}'));
-ashxsignheaderArr.push($.getdata('ashxsignheader${i}'));
+    if ($.getdata(`ashxsignurl${i}`)) {	
+  ashxsignurlArr.push($.getdata(`ashxsignurl${i}`));
+ashxsignheaderArr.push($.getdata(`ashxsignheader${i}`));
 
-initsignheaderArr.push($.getdata('initsignheader${i}'));
- initsignbdArr.push($.getdata('initsignbd${i}'));
- addCoinsignbdArr.push($.getdata('addCoinsignbd${i}'));
- addCoin1signbdArr.push($.getdata('addCoin1signbd${i}'));
+initsignheaderArr.push($.getdata(`initsignheader${i}`));
+ initsignbdArr.push($.getdata(`initsignbd${i}`));
+ addCoinsignbdArr.push($.getdata(`addCoinsignbd${i}`));
+ addCoin1signbdArr.push($.getdata(`addCoin1signbd${i}`));
  
-coinsignurlArr.push($.getdata('coinsignurl${i}'));
- coinsignheaderArr.push($.getdata('coinsignheader${i}'));
- coinsignbdArr.push($.getdata('coinsignbd${i}'));
- cointowalletsignurlArr.push($.getdata('cointowalletsignurl${i}'));
-cointowalletsignheaderArr.push($.getdata('cointowalletsignheader${i}'));
- cointowalletsignbdArr.push($.getdata('cointowalletsignbd${i}'));
+coinsignurlArr.push($.getdata(`coinsignurl${i}`));
+ coinsignheaderArr.push($.getdata(`coinsignheader${i}`));
+ coinsignbdArr.push($.getdata(`coinsignbd${i}`));
+ cointowalletsignurlArr.push($.getdata(`cointowalletsignurl${i}`));
+cointowalletsignheaderArr.push($.getdata(`cointowalletsignheader${i}`));
+ cointowalletsignbdArr.push($.getdata(`cointowalletsignbd${i}`));
 
 
- coinbodyjxArr.push($.getdata('coinbodyjx${i}'));
+ coinbodyjxArr.push($.getdata(`coinbodyjx${i}`));
 
- coinbodylqflArr.push($.getdata('coinbodylqfl${i}'));
+ coinbodylqflArr.push($.getdata(`coinbodylqfl${i}`));
 
- coinbodykspArr.push($.getdata('coinbodyksp${i}'));
+ coinbodykspArr.push($.getdata(`coinbodyksp${i}`));
 
- coinbodyzjbArr.push($.getdata('coinbodyzjb${i}'));
+ coinbodyzjbArr.push($.getdata(`coinbodyzjb${i}`));
 
- coinbodyflspArr.push($.getdata('coinbodyflsp${i}'));
+ coinbodyflspArr.push($.getdata(`coinbodyflsp${i}`));
 
- coinbodyrwArr.push($.getdata('coinbodyrw${i}'));
- reportAssbodyArr.push($.getdata('reportAssbody${i}'));
-reportAssheaderArr.push($.getdata('reportAssheader${i}'));
+ coinbodyrwArr.push($.getdata(`coinbodyrw${i}`));
+ reportAssbodyArr.push($.getdata(`reportAssbody${i}`));
+reportAssheaderArr.push($.getdata(`reportAssheader${i}`));
 
     }
   }
