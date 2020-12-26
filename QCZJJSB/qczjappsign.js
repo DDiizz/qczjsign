@@ -98,131 +98,6 @@ let middlecointowalletBODY = [];
 
 
 
-function GetCookie() {
-//用户名
-if ($request && $request.url.indexOf("GetUserInfo.ashx") >= 0) {
-    const GetUserInfourlVal = $request.url;
-    if (GetUserInfourlVal) $.setdata(GetUserInfourlVal, "GetUserInfourl" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取用户名url✅: 成功,GetUserInfourlVal: ${GetUserInfourlVal}`
-    );
-    $.msg($.name + $.idx, `获取用户名url: 成功🎉`, ``);		
-    const GetUserInfoheaderVal = JSON.stringify($request.headers);
-    if (GetUserInfoheaderVal) $.setdata(GetUserInfoheaderVal, "GetUserInfoheader" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取用户名header✅: 成功,GetUserInfoheaderVal: ${GetUserInfoheaderVal}`
-    );
-    $.msg($.name + $.idx, `获取用户名header: 成功🎉`, ``);
-    } 
-//账户信息
-if ($request && $request.url.indexOf("init") >= 0&& $request.url.indexOf("coin") >= 0&&$request.body.indexOf("pm=1")>=0) {
-    const coinbodyVal = $request.body;
-    if (coinbodyVal) $.setdata(coinbodyVal, "coinbody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取账户信息body✅: 成功,coinbodyVal: ${coinbodyVal}`
-    );
-    $.msg($.name + $.idx, `获取账户信息body: 成功🎉`, ``);
-    } 
-//日常任务
-if ($request && $request.url.indexOf("init") >= 0&& $request.url.indexOf("task") >= 0&&$request.body.indexOf("model=1")>=0) {
-    const taskbodyVal = $request.body;
-    if (taskbodyVal) $.setdata(taskbodyVal, "taskbody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取日常任务body✅: 成功,taskbodyVal: ${taskbodyVal}`
-    );
-    $.msg($.name + $.idx, `获取日常任务body: 成功🎉`, ``);
-    } 
-//活动
-if ($request && $request.url.indexOf("activity") >= 0&&$request.body.indexOf("pm=1")>=0)  {
-    const activitybodyVal = $request.body;
-    if (activitybodyVal) $.setdata(activitybodyVal, "activitybody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取活动body✅: 成功,activitybodyVal: ${activitybodyVal}`
-    );
-    $.msg($.name + $.idx, `获取活动body: 成功🎉`, ``);
-    } 
-
-//惊喜福利 视频 福利视频 福利
-if ($request && $request.url.indexOf("addRewardLog") >= 0&&$request.body.indexOf("pm=1")>=0)  {
-if (ins==1) {
-    const GoldcoinbodyVal = $request.body;
-    if (GoldcoinbodyVal) $.setdata(GoldcoinbodyVal, "Goldcoinbody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取惊喜福利body✅: 成功,GoldcoinbodyVal: ${GoldcoinbodyVal}`
-    );
-    $.msg($.name + $.idx, `获取惊喜福利body: 成功🎉`, ``);
-	 }if (ins==2) {
-	const videobodyVal = $request.body;
-    if (videobodyVal) $.setdata(videobodyVal, "videobody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取视频body✅: 成功,videobodyVal: ${videobodyVal}`
-    );
-    $.msg($.name + $.idx, `获取视频body: 成功🎉`, ``);
-	 } if (ins==3) {  
-    const WelfarevideobodyVal = $request.body;
-    if (WelfarevideobodyVal) $.setdata(WelfarevideobodyVal, "Welfarevideobody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取福利视频body✅: 成功,WelfarevideobodyVal: ${WelfarevideobodyVal}`
-    );
-    $.msg($.name + $.idx, `获取福利视频body: 成功🎉`, ``);	
-	 } if (ins==4) {
-    const WelfarebodyVal = $request.body;
-    if (WelfarebodyVal) $.setdata(WelfarebodyVal, "Welfarebody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取福利body✅: 成功,WelfarebodyVal: ${WelfarebodyVal}`
-    );
-    $.msg($.name + $.idx, `获取福利body: 成功🎉`, ``);
-    } 	
-
-	}	
-//时段任务
- if ($request &&$request.body.indexOf("moreflag=0")>=0 ){
-    const addCoinbodyVal = $request.body;
-    if (addCoinbodyVal) $.setdata(addCoinbodyVal, "addCoinbody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取时段任务body✅: 成功,addCoinbodyVal: ${addCoinbodyVal}`
-    );
-    $.msg($.name + $.idx, `获取时段任务body: 成功🎉`, ``);
-    } 
-//时段翻倍
- if ($request &&$request.body.indexOf("moreflag=1")>=0 ){
-    const addCoin2bodyVal = $request.body;
-    if (addCoin2bodyVal) $.setdata(addCoin2bodyVal, "addCoin2body" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取时段翻倍body✅: 成功,addCoin2bodyVal: ${addCoin2bodyVal}`
-    );
-    $.msg($.name + $.idx, `获取时段翻倍body: 成功🎉`, ``);
-    } 
-//助力任务
-if ($request && $request.url.indexOf("reportAss") >= 0) {
-    const reportAssheaderVal = JSON.stringify($request.headers);
-    if (reportAssheaderVal) $.setdata(reportAssheaderVal, "reportAssheader" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取助力任务header✅: 成功,reportAssheaderVal: ${reportAssheaderVal}`
-    );
-    $.msg($.name + $.idx, `获取助力任务header: 成功🎉`, ``);
-	
-if ($request &&$request.body.indexOf("_appid=car")>=0 ){	
-    const reportAssbodyVal = $request.body;
-    if (reportAssbodyVal) $.setdata(reportAssbodyVal, "reportAssbody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取助力任务body✅: 成功,reportAssbodyVal: ${reportAssbodyVal}`
-    );
-    $.msg($.name + $.idx, `获取助力任务body: 成功🎉`, ``);
-	}
-    } 
-//提现
-if ($request && $request.url.indexOf("cointowallet") >= 0&&$request.body.indexOf("pm=1")>=0) {
-    const cointowalletbodyVal = $request.body;
-    if (cointowalletbodyVal) $.setdata(cointowalletbodyVal, "cointowalletbody" + $.idx);
-    $.log(
-      `[${$.name + $.idx}] 获取提现body✅: 成功,cointowalletbodyVal: ${cointowalletbodyVal}`
-    );
-    $.msg($.name + $.idx, `获取提现body: 成功🎉`, ``);
-    } 
-}
-
-
 let isGetCookie = typeof $request !== 'undefined'
 if (isGetCookie) {
   GetCookie()
@@ -593,6 +468,133 @@ if($.cointowallet.returncode==0)
     },timeout)
   })
 }
+
+
+function GetCookie() {
+//用户名
+if ($request && $request.url.indexOf("GetUserInfo.ashx") >= 0) {
+    const GetUserInfourlVal = $request.url;
+    if (GetUserInfourlVal) $.setdata(GetUserInfourlVal, "GetUserInfourl" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取用户名url✅: 成功,GetUserInfourlVal: ${GetUserInfourlVal}`
+    );
+    $.msg($.name + $.idx, `获取用户名url: 成功🎉`, ``);		
+    const GetUserInfoheaderVal = JSON.stringify($request.headers);
+    if (GetUserInfoheaderVal) $.setdata(GetUserInfoheaderVal, "GetUserInfoheader" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取用户名header✅: 成功,GetUserInfoheaderVal: ${GetUserInfoheaderVal}`
+    );
+    $.msg($.name + $.idx, `获取用户名header: 成功🎉`, ``);
+    } 
+//账户信息
+if ($request && $request.url.indexOf("init") >= 0&& $request.url.indexOf("coin") >= 0&&$request.body.indexOf("pm=1")>=0) {
+    const coinbodyVal = $request.body;
+    if (coinbodyVal) $.setdata(coinbodyVal, "coinbody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取账户信息body✅: 成功,coinbodyVal: ${coinbodyVal}`
+    );
+    $.msg($.name + $.idx, `获取账户信息body: 成功🎉`, ``);
+    } 
+//日常任务
+if ($request && $request.url.indexOf("init") >= 0&& $request.url.indexOf("task") >= 0&&$request.body.indexOf("model=1")>=0) {
+    const taskbodyVal = $request.body;
+    if (taskbodyVal) $.setdata(taskbodyVal, "taskbody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取日常任务body✅: 成功,taskbodyVal: ${taskbodyVal}`
+    );
+    $.msg($.name + $.idx, `获取日常任务body: 成功🎉`, ``);
+    } 
+//活动
+if ($request && $request.url.indexOf("activity") >= 0&&$request.body.indexOf("pm=1")>=0)  {
+    const activitybodyVal = $request.body;
+    if (activitybodyVal) $.setdata(activitybodyVal, "activitybody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取活动body✅: 成功,activitybodyVal: ${activitybodyVal}`
+    );
+    $.msg($.name + $.idx, `获取活动body: 成功🎉`, ``);
+    } 
+
+//惊喜福利 视频 福利视频 福利
+if ($request && $request.url.indexOf("addRewardLog") >= 0&&$request.body.indexOf("pm=1")>=0)  {
+if (ins==1) {
+    const GoldcoinbodyVal = $request.body;
+    if (GoldcoinbodyVal) $.setdata(GoldcoinbodyVal, "Goldcoinbody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取惊喜福利body✅: 成功,GoldcoinbodyVal: ${GoldcoinbodyVal}`
+    );
+    $.msg($.name + $.idx, `获取惊喜福利body: 成功🎉`, ``);
+	 }if (ins==2) {
+	const videobodyVal = $request.body;
+    if (videobodyVal) $.setdata(videobodyVal, "videobody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取视频body✅: 成功,videobodyVal: ${videobodyVal}`
+    );
+    $.msg($.name + $.idx, `获取视频body: 成功🎉`, ``);
+	 } if (ins==3) {  
+    const WelfarevideobodyVal = $request.body;
+    if (WelfarevideobodyVal) $.setdata(WelfarevideobodyVal, "Welfarevideobody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取福利视频body✅: 成功,WelfarevideobodyVal: ${WelfarevideobodyVal}`
+    );
+    $.msg($.name + $.idx, `获取福利视频body: 成功🎉`, ``);	
+	 } if (ins==4) {
+    const WelfarebodyVal = $request.body;
+    if (WelfarebodyVal) $.setdata(WelfarebodyVal, "Welfarebody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取福利body✅: 成功,WelfarebodyVal: ${WelfarebodyVal}`
+    );
+    $.msg($.name + $.idx, `获取福利body: 成功🎉`, ``);
+    } 	
+
+	}	
+//时段任务
+ if ($request &&$request.body.indexOf("moreflag=0")>=0 ){
+    const addCoinbodyVal = $request.body;
+    if (addCoinbodyVal) $.setdata(addCoinbodyVal, "addCoinbody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取时段任务body✅: 成功,addCoinbodyVal: ${addCoinbodyVal}`
+    );
+    $.msg($.name + $.idx, `获取时段任务body: 成功🎉`, ``);
+    } 
+//时段翻倍
+ if ($request &&$request.body.indexOf("moreflag=1")>=0 ){
+    const addCoin2bodyVal = $request.body;
+    if (addCoin2bodyVal) $.setdata(addCoin2bodyVal, "addCoin2body" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取时段翻倍body✅: 成功,addCoin2bodyVal: ${addCoin2bodyVal}`
+    );
+    $.msg($.name + $.idx, `获取时段翻倍body: 成功🎉`, ``);
+    } 
+//助力任务
+if ($request && $request.url.indexOf("reportAss") >= 0) {
+    const reportAssheaderVal = JSON.stringify($request.headers);
+    if (reportAssheaderVal) $.setdata(reportAssheaderVal, "reportAssheader" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取助力任务header✅: 成功,reportAssheaderVal: ${reportAssheaderVal}`
+    );
+    $.msg($.name + $.idx, `获取助力任务header: 成功🎉`, ``);
+	
+if ($request &&$request.body.indexOf("_appid=car")>=0 ){	
+    const reportAssbodyVal = $request.body;
+    if (reportAssbodyVal) $.setdata(reportAssbodyVal, "reportAssbody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取助力任务body✅: 成功,reportAssbodyVal: ${reportAssbodyVal}`
+    );
+    $.msg($.name + $.idx, `获取助力任务body: 成功🎉`, ``);
+	}
+    } 
+//提现
+if ($request && $request.url.indexOf("cointowallet") >= 0&&$request.body.indexOf("pm=1")>=0) {
+    const cointowalletbodyVal = $request.body;
+    if (cointowalletbodyVal) $.setdata(cointowalletbodyVal, "cointowalletbody" + $.idx);
+    $.log(
+      `[${$.name + $.idx}] 获取提现body✅: 成功,cointowalletbodyVal: ${cointowalletbodyVal}`
+    );
+    $.msg($.name + $.idx, `获取提现body: 成功🎉`, ``);
+    } 
+}
+
+
 
 //通知
 function msgShow() {
