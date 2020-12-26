@@ -109,7 +109,7 @@ MITM= mobile.app.autohome.com.cn, openapi.autohome.com.cn
 const DD ='汽车之家极速版APP';
 
 const $ = new Env(DD);
-$.index = ($.index = ($.getval('qeSuffix') || '1') - 1) > 0 ? ($.index + 1 + '') : ''; // 账号扩展字符
+$.idx = ($.idx = ($.getval('qeSuffix') || '1') - 1) > 0 ? ($.idx + 1 + '') : ''; // 账号扩展字符
 const logs=0;//设置0关闭日志,1开启日志
 
 const log=0;//0关闭系统日志,1开启系统日志,和系统通知不要一起打开,关闭系统通知就要打开,系统日志
@@ -784,27 +784,27 @@ if ($request.url.indexOf("ashx?") > 0) {
     
 const ashxSignurl = $request.url;
 if (ashxSignurl)
-$.setdata(ashxSignurl,'ashxsignurl' + $.index);
+$.setdata(ashxSignurl,'ashxsignurl' + $.idx);
  const ashxSignheader = JSON.stringify($request.headers);
 if(ashxSignheader)
-$.setdata(ashxSignheader,'ashxsignheader' + $.index);
+$.setdata(ashxSignheader,'ashxsignheader' + $.idx);
     
-    $.msg($.name + $.index,"","[获取昵称数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取昵称数据]✅成功")}
 else  
 if ($request.url.indexOf("activity") > -1) {
     
 const initSignurl = $request.url;
 if(initSignurl)
-$.setdata(initSignurl,'initsignurl' + $.index);
+$.setdata(initSignurl,'initsignurl' + $.idx);
     const initSignheader = JSON.stringify($request.headers);
 if(initSignheader)
-$.setdata(initSignheader,'initsignheader' + $.index);
+$.setdata(initSignheader,'initsignheader' + $.idx);
  const initSignbd = $request.body;
 if(initSignbd)
-    $.setdata(initSignbd,'initsignbd' + $.index);
+    $.setdata(initSignbd,'initsignbd' + $.idx);
 
     
-    $.msg($.name + $.index,"","[获取签到数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取签到数据]✅成功")}
 
   else
 if ($request.body.indexOf("moreflag=0") > -1) {
@@ -812,52 +812,52 @@ if ($request.body.indexOf("moreflag=0") > -1) {
 const addCoinSignbd = $request.body;
 if(addCoinSignbd)
 
-    $.setdata(addCoinSignbd,'addCoinsignbd' + $.index);
+    $.setdata(addCoinSignbd,'addCoinsignbd' + $.idx);
 
     
-    $.msg($.name + $.index,"","[获取首页时段数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取首页时段数据]✅成功")}
 
   else
 if ($request.body.indexOf("moreflag=1") > -1) {
 const addCoin1Signbd = $request.body;
 if(addCoin1Signbd)
-    $.setdata(addCoin1Signbd,'addCoin1signbd' + $.index)
-    $.msg($.name + $.index,"","[获取首页时段翻倍数据]✅成功")}
+    $.setdata(addCoin1Signbd,'addCoin1signbd' + $.idx);
+    $.msg($.name + $.idx,"","[获取首页时段翻倍数据]✅成功")}
 
 else
 if ($request.url.indexOf("cointowallet") > -1) {
     
 const cointowalletSignurl = $request.url;
 if(cointowalletSignurl)
-$.setdata(cointowalletSignurl,'cointowalletsignurl' + $.index);
+$.setdata(cointowalletSignurl,'cointowalletsignurl' + $.idx);
 
 const cointowalletSignheader = JSON.stringify($request.headers);
-if(cointowalletSignheader) $.setdata(cointowalletSignheader,'cointowalletsignheader' + $.index);
+if(cointowalletSignheader) $.setdata(cointowalletSignheader,'cointowalletsignheader' + $.idx);
 
 const cointowalletSignbd = $request.body;
 if(cointowalletSignbd)
-$.setdata(cointowalletSignbd,'cointowalletsignbd' + $.index)
+$.setdata(cointowalletSignbd,'cointowalletsignbd' + $.idx);
 
     
-    $.msg($.name + $.index,"","[获取提现数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取提现数据]✅成功")}
 
 else
 if ($request.url.indexOf("coin") > 0) {
     
 const coinSignurl = $request.url;
 if(coinSignurl)
-$.setdata(coinSignurl,'coinsignurl' + $.index);
+$.setdata(coinSignurl,'coinsignurl' + $.idx);
   
 const coinSignheader = JSON.stringify($request.headers);
 if(coinSignheader) 
-$.setdata(coinSignheader,'coinsignheader' + $.index);
+$.setdata(coinSignheader,'coinsignheader' + $.idx);
 
 const coinSignbd = $request.body;
 if(coinSignbd)
-    $.setdata(coinSignbd,'coinsignbd' + $.index);
+    $.setdata(coinSignbd,'coinsignbd' + $.idx);
 
     
-    $.msg($.name + $.index,"","[获取金币数据]✅成功")}
+    $.msg($.name + $.idx,"","[获取金币数据]✅成功")}
 
 
   else
@@ -866,36 +866,36 @@ if ($request.url.indexOf("addRewardLog") > 0&&$request.body.indexOf("pm=1") > 0)
     if(Body==1){
 const Coinbodyjx = $request.body;
 if(Coinbodyjx)
-    $.setdata(Coinbodyjx,'coinbodyjx' + $.index);
+    $.setdata(Coinbodyjx,'coinbodyjx' + $.idx);
 
-    $.msg($.name + $.index,"","[获取惊喜福利数据]✅成功");}
+    $.msg($.name + $.idx,"","[获取惊喜福利数据]✅成功");}
 if(Body==2){
 
 const Coinbodylqfl = $request.body;
 if(Coinbodylqfl)
-    $.setdata(Coinbodylqfl,'coinbodylqfl' + $.index);
+    $.setdata(Coinbodylqfl,'coinbodylqfl' + $.idx);
 
-    $.msg($.name + $.index,"","[获取领取福利368数据]✅成功");}
+    $.msg($.name + $.idx,"","[获取领取福利368数据]✅成功");}
 if(Body==3){
 const Coinbodyzjb = $request.body;
 if(Coinbodyzjb)
-    $.setdata(Coinbodyzjb,'coinbodyzjb' + $.index);
+    $.setdata(Coinbodyzjb,'coinbodyzjb' + $.idx);
 
-    $.msg($.name + $.index,"","[获取分享视频赚金币数据]✅成功");}
+    $.msg($.name + $.idx,"","[获取分享视频赚金币数据]✅成功");}
 
 if(Body==4){
 const Coinbodyksp = $request.body;
 if(Coinbodyksp)
-    $.setdata(Coinbodyksp,'coinbodyksp' + $.index);
+    $.setdata(Coinbodyksp,'coinbodyksp' + $.idx);
 
-    $.msg($.name + $.index,"","[获取看视频领金币数据]✅成功");}
+    $.msg($.name + $.idx,"","[获取看视频领金币数据]✅成功");}
 
 if(Body==5){
 const Coinbodyflsp = $request.body;
 if(Coinbodyflsp)
-    $.setdata(Coinbodyflsp,'coinbodyflsp' + $.index);
+    $.setdata(Coinbodyflsp,'coinbodyflsp' + $.idx);
 
-    $.msg($.name + $.index,"","[获取观看福利视频数据]✅成功");}
+    $.msg($.name + $.idx,"","[获取观看福利视频数据]✅成功");}
 
 }
 
@@ -903,20 +903,21 @@ if(Coinbodyflsp)
 if ($request.url.indexOf("task") > 0) {
     const Coinbodyrw = $request.body;
 if(Coinbodyrw)
-    $.setdata(Coinbodyrw,'coinbodyrw' + $.index);
-    $.msg($.name + $.index,"","[获取任务数据]✅成功")}
+    $.setdata(Coinbodyrw,'coinbodyrw' + $.idx);
+    $.msg($.name + $.idx,"","[获取任务数据]✅成功")}
 
   else
 if ($request.url.indexOf("reportAss") > 0) {
     const ReportAssheader = JSON.stringify($request.headers);
-if(ReportAssheader)$.setdata(ReportAssheader,'reportAssheader' + $.index);
+if(ReportAssheader)$.setdata(ReportAssheader,'reportAssheader' + $.idx);
 
 const ReportAssbody = $request.body;
 if(ReportAssbody)
-    $.setdata(ReportAssbody,'reportAssbody' + $.index);
-    $.msg($.name + $.index,"","[获取助力数据]✅成功")}
+    $.setdata(ReportAssbody,'reportAssbody' + $.idx);
+    $.msg($.name + $.idx,"","[获取助力数据]✅成功")}
 
 }
+
 
 
 
