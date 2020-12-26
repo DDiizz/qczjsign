@@ -31,8 +31,8 @@
 "desc": "1,获取惊喜福利，2,领取福利188,3,分享视频赚金币,4,看视频领金币,5,观看福利视频"
 }
 ],
-"repo": "https://github.com/DDiizz/task/blob/main/qczjsign/qczjappsign.js",
+"repo": "https://github.com/DDiizz/qczjsign/blob/main/QCZJJSB/qczjappsign.js",
 "icons": ["https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/qczjspeed.jpg", "https://raw.githubusercontent.com/ziye12/QCZJSPEED/main/qczjspeed.jpg"],
-"script": "https://raw.githubusercontent.com/DDiizz/task/main/qczjsign/qczjappsign.js"
+"script": "https://raw.githubusercontent.com/DDiizz/qczjsign/main/QCZJJSB/qczjappsign.js"
 }]
 }
