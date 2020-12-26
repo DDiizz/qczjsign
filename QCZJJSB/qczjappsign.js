@@ -120,70 +120,70 @@ const noNolog=0;//1关闭系统通知,0打开系统通知
 const Body =  $.getval('qczjBody'); // 0,不获取，1,获取惊喜福利，2,领取福利188,3,分享视频赚金币,4,看视频领金币,5,观看福利视频
 
 
-let dd = "" //
+let dd = ""; //
 
 
 
 const ashxsignurlArr = [];
-let ashxSignurl = "";
+let ashxSignurl = '';
 const ashxsignheaderArr = [];
-let ashxSignheader = "";
+let ashxSignheader = '';
 
 
 const initsignheaderArr = [];
-let initSignheader = "";
+let initSignheader = '';
 const initsignbdArr = [];
-let initSignbd = "";
+let initSignbd = '';
 
 const addCoinsignbdArr = [];
-let addCoinSignbd = "";
+let addCoinSignbd = '';
 
 const addCoin1signbdArr = [];
-let addCoin1Signbd = "";
+let addCoin1Signbd = '';
 
 const coinsignurlArr = [];
-let coinSignurl = "";
+let coinSignurl = '';
 
 const coinsignheaderArr = [];
-let coinSignheader = "";
+let coinSignheader = '';
 
 const coinsignbdArr = [];
-let coinSignbd = "";
+let coinSignbd = '';
 
 const cointowalletsignurlArr = [];
-let cointowalletSignurl = "";
+let cointowalletSignurl = '';
 
 const cointowalletsignheaderArr = [];
-let cointowalletSignheader = "";
+let cointowalletSignheader = '';
 
 const cointowalletsignbdArr = [];
-let cointowalletSignbd = "";
+let cointowalletSignbd = '';
 
 
 const coinbodyjxArr = [];
-let Coinbodyjx = "";
+let Coinbodyjx = '';
 
 const coinbodylqflArr = [];
-let Coinbodylqfl = "";
+let Coinbodylqfl = '';
 
 const coinbodykspArr = [];
-let Coinbodyksp = "";
+let Coinbodyksp = '';
 
 const coinbodyzjbArr = [];
-let Coinbodyzjb = "";
+let Coinbodyzjb = '';
 
 const coinbodyflspArr = [];
-let Coinbodyflsp = "";
+let Coinbodyflsp = '';
 
 const coinbodyrwArr = [];
-let Coinbodyrw = "";
+let Coinbodyrw = '';
 
 
 const reportAssbodyArr = [];
-let ReportAssbody = "";
+let ReportAssbody = '';
 
 const reportAssheaderArr =[];
-let ReportAssheader = "";
+let ReportAssheader = '';
 
 ashxsignurlArr.push($.getdata('ashxsignurl'));
 ashxsignheaderArr.push($.getdata('ashxsignheader'));
