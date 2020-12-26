@@ -785,17 +785,17 @@ function qczjsign() {
 if ($request.url.indexOf("ashx?") > 0) {
     
 
-$.setdata($request.url,'ashxsignurl')
-    $.setdata(JSON.stringify($request.headers),'ashxsignheader')
+$.setdata($request.url,'ashxsignurl' + $.index)
+    $.setdata(JSON.stringify($request.headers),'ashxsignheader' + $.index)
     
     $.msg($.name + $.index,"","[获取昵称数据]✅成功")}
 else  
 if ($request.url.indexOf("activity") > -1) {
     
 
-$.setdata($request.url,'initsignurl')
-    $.setdata(JSON.stringify($request.headers),'initsignheader')
-    $.setdata($request.body,'initsignbd')
+$.setdata($request.url,'initsignurl' + $.index)
+    $.setdata(JSON.stringify($request.headers),'initsignheader' + $.index)
+    $.setdata($request.body,'initsignbd' + $.index)
 
     
     $.msg($.name + $.index,"","[获取签到数据]✅成功")}
@@ -805,7 +805,7 @@ if ($request.body.indexOf("moreflag=0") > -1) {
     
 
 
-    $.setdata($request.body,'addCoinsignbd')
+    $.setdata($request.body,'addCoinsignbd' + $.index)
 
     
     $.msg($.name + $.index,"","[获取首页时段数据]✅成功")}
@@ -813,17 +813,17 @@ if ($request.body.indexOf("moreflag=0") > -1) {
   else
 if ($request.body.indexOf("moreflag=1") > -1) {
 
-    $.setdata($request.body,'addCoin1signbd')
+    $.setdata($request.body,'addCoin1signbd' + $.index)
     $.msg($.name + $.index,"","[获取首页时段翻倍数据]✅成功")}
 
 else
 if ($request.url.indexOf("cointowallet") > -1) {
     
 
-$.setdata($request.url,'cointowalletsignurl')
-    $.setdata(JSON.stringify($request.headers),'cointowalletsignheader')
+$.setdata($request.url,'cointowalletsignurl' + $.index)
+    $.setdata(JSON.stringify($request.headers),'cointowalletsignheader' + $.index)
 
-$.setdata($request.body,'cointowalletsignbd')
+$.setdata($request.body,'cointowalletsignbd' + $.index)
 
     
     $.msg($.name + $.index,"","[获取提现数据]✅成功")}
@@ -832,9 +832,9 @@ else
 if ($request.url.indexOf("coin") > 0) {
     
 
-$.setdata($request.url,'coinsignurl')
-    $.setdata(JSON.stringify($request.headers),'coinsignheader')
-    $.setdata($request.body,'coinsignbd')
+$.setdata($request.url,'coinsignurl' + $.index)
+    $.setdata(JSON.stringify($request.headers),'coinsignheader' + $.index)
+    $.setdata($request.body,'coinsignbd' + $.index)
 
     
     $.msg($.name + $.index,"","[获取金币数据]✅成功")}
@@ -845,29 +845,29 @@ if ($request.url.indexOf("addRewardLog") > 0&&$request.body.indexOf("pm=1") > 0)
  {
     if(Body==1){
 
-    $.setdata($request.body,'coinbodyjx')
+    $.setdata($request.body,'coinbodyjx' + $.index)
 
     $.msg($.name + $.index,"","[获取惊喜福利数据]✅成功");}
 if(Body==2){
 
-    $.setdata($request.body,'coinbodylqfl')
+    $.setdata($request.body,'coinbodylqfl' + $.index)
 
     $.msg($.name + $.index,"","[获取领取福利368数据]✅成功");}
 if(Body==3){
 
-    $.setdata($request.body,'coinbodyzjb')
+    $.setdata($request.body,'coinbodyzjb' + $.index)
 
     $.msg($.name + $.index,"","[获取分享视频赚金币数据]✅成功");}
 
 if(Body==4){
 
-    $.setdata($request.body,'coinbodyksp')
+    $.setdata($request.body,'coinbodyksp' + $.index)
 
     $.msg($.name + $.index,"","[获取看视频领金币数据]✅成功");}
 
 if(Body==5){
 
-    $.setdata($request.body,'coinbodyflsp')
+    $.setdata($request.body,'coinbodyflsp' + $.index)
 
     $.msg($.name + $.index,"","[获取观看福利视频数据]✅成功");}
 
@@ -876,13 +876,13 @@ if(Body==5){
   else
 if ($request.url.indexOf("task") > 0) {
     
-    $.setdata($request.body,'coinbodyrw')
+    $.setdata($request.body,'coinbodyrw' + $.index)
     $.msg($.name + $.index,"","[获取任务数据]✅成功")}
 
   else
 if ($request.url.indexOf("reportAss") > 0) {
-    $.setdata(JSON.stringify($request.headers),'reportAssheader')
-    $.setdata($request.body,'reportAssbody')
+    $.setdata(JSON.stringify($request.headers),'reportAssheader' + $.index)
+    $.setdata($request.body,'reportAssbody' + $.index)
     $.msg($.name + $.index,"","[获取助力数据]✅成功")}
 
 
