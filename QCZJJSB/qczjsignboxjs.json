@@ -32,7 +32,7 @@
 }
 ],
 "repo": "https://github.com/DDiizz/qczjsign/blob/main/QCZJJSB/qczjappsign.js",
-"icons":"",
+"icons": ["https://raw.githubusercontent.com/DDiizz/qczjsign/main/QCZJJSB/qczjappsign.jpg", "https://raw.githubusercontent.com/DDiizz/qczjsign/main/QCZJJSB/qczjappsign.jpg"],
 "script": "https://raw.githubusercontent.com/DDiizz/qczjsign/main/QCZJJSB/qczjappsign.js"
 }]
 }
