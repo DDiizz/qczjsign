@@ -740,7 +740,7 @@ function coin() {
           if(logs==1)console.log(data)
           $.coin = data;
 if($.coin.returncode== 0)
-dd+= "【账号金币查询】"+"现金"+$.coin.result.nowmoney+"元💸"+",今日"+$.coin.result.nowcoin+"💰金币";
+dd+= "【账号金币查询】"+"现金"+$.coin.result.nowmoney+"元💸"+",今日"+$.coin.result.nowcoin+"💰金币\n";
 
         } catch (e) {
           $.logErr(e, resp);
